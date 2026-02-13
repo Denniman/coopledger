@@ -12,3 +12,8 @@ yarn-error.log*
 pnpm-debug.log*
 .turbo
 .vercel
+
+# Documentation and Trae specific files
+coopLedger-prd.md
+coopLedger-technical-architecture.md
+.trae/

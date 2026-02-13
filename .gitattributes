@@ -1,0 +1,22 @@
+# Handle line endings automatically for files detected as text
+# and leave files detected as binary untouched.
+* text=auto
+
+# Ensure those files are always using LF
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.sh text eol=lf
+
+# Deny checkout of files with names that would clash on a case-insensitive filesystem
+# (like Windows or macOS)
+*.jpg binary
+*.png binary
+*.gif binary

@@ -1,8 +1,8 @@
-import express from "express";
-import cors from "cors";
-import helmet from "helmet";
-import morgan from "morgan";
-import dotenv from "dotenv";
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import morgan from 'morgan';
+import dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -11,11 +11,11 @@ const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(helmet());
-app.use(morgan("dev"));
+app.use(morgan('dev'));
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to coopLedger API" });
+app.get('/', (_req, res) => {
+  res.json({ message: 'Welcome to coopLedger API' });
 });
 
 app.listen(port, () => {
